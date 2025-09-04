@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "b1570a4f-25b2-422b-8368-115ea06ae6e5",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20856854"
+	},
+	"item": [
+		{
+			"name": "getClients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7210/api/Clients/getClients",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7210",
+					"path": [
+						"api",
+						"Clients",
+						"getClients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7210/api/Clients/getClient/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7210",
+					"path": [
+						"api",
+						"Clients",
+						"getClient",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClientByName",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7210/api/Clients/getClientByName/fernando",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7210",
+					"path": [
+						"api",
+						"Clients",
+						"getClientByName",
+						"fernando"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addClient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"name\": \"Fernando2\",\n        \"lastName\": \"Novara\",\n        \"birthDate\": \"1994-05-20T01:02:44.004\",\n        \"cuit\": \"26-54919127-3\",\n        \"address\": \"San Luis,Argentina\",\n        \"cellphone\": \"123456789\",\n        \"email\": \"user@example.com\"\n    }"
+				},
+				"url": {
+					"raw": "https://localhost:7210/api/Clients/addClient",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7210",
+					"path": [
+						"api",
+						"Clients",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"clientId\": 6,\n        \"name\": \"Fernando3\",\n        \"lastName\": \"Novara\",\n        \"birthDate\": \"1994-05-20T01:02:44.004\",\n        \"cuit\": \"26-54919127-3\",\n        \"address\": \"San Luis,Argentina\",\n        \"cellphone\": \"123456789\",\n        \"email\": \"user@example.com\"\n    }"
+				},
+				"url": {
+					"raw": "https://localhost:7210/api/Clients/updateClient",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7210",
+					"path": [
+						"api",
+						"Clients",
+						"updateClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7210/api/Clients/deleteClient/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7210",
+					"path": [
+						"api",
+						"Clients",
+						"deleteClient",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
