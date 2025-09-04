@@ -72,13 +72,14 @@ namespace Challenge.Backend.Controllers
         {
             try
             {
+                
                 var Clients = await _context.Clients.Where(e => e.Name!.Contains(name)).ToListAsync();
 
                 if (Clients == null)
                 {
                     return NotFound(new { message = $"Clients with name {name} was not found." });
                 }
-
+                _log.LogInfo("Successful client retrieve.");
                 return Ok(Clients);
             }
             catch (Exception ex)

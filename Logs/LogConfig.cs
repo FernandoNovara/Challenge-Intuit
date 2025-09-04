@@ -12,7 +12,7 @@ namespace Challenge.Backend.Logs
                 .MinimumLevel.Debug()
                 .Enrich.FromLogContext()
                 .WriteTo.Console()
-                .WriteTo.File("../LogsFiles/Log-.txt", rollingInterval: RollingInterval.Day)
+                .WriteTo.File("./LogsFiles/Log-.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
         }
     }

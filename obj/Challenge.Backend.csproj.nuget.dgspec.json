@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Challenge\\CHALLENGE-Intuit\\Challenge.Backend\\Challenge.Backend.csproj": {}
+    "D:\\Challenge\\Challenge Backend\\Challenge.Backend.csproj": {}
   },
   "projects": {
-    "D:\\Challenge\\CHALLENGE-Intuit\\Challenge.Backend\\Challenge.Backend.csproj": {
+    "D:\\Challenge\\Challenge Backend\\Challenge.Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Challenge\\CHALLENGE-Intuit\\Challenge.Backend\\Challenge.Backend.csproj",
+        "projectUniqueName": "D:\\Challenge\\Challenge Backend\\Challenge.Backend.csproj",
         "projectName": "Challenge.Backend",
-        "projectPath": "D:\\Challenge\\CHALLENGE-Intuit\\Challenge.Backend\\Challenge.Backend.csproj",
+        "projectPath": "D:\\Challenge\\Challenge Backend\\Challenge.Backend.csproj",
         "packagesPath": "C:\\Users\\Ferna\\.nuget\\packages\\",
-        "outputPath": "D:\\Challenge\\CHALLENGE-Intuit\\Challenge.Backend\\obj\\",
+        "outputPath": "D:\\Challenge\\Challenge Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

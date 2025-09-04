@@ -69,6 +69,32 @@
   },
   {
     "ContainingType": "Challenge.Backend.Controllers.ClientsController",
+    "Method": "GetClientByName",
+    "RelativePath": "api/Clients/getClientByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Challenge.Backend.Model.Clients",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Challenge.Backend.Controllers.ClientsController",
     "Method": "GetClients",
     "RelativePath": "api/Clients/getClients",
     "HttpMethod": "GET",
